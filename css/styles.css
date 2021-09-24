@@ -2,27 +2,41 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --background-color: f5f4fa;
+  --background-color: #f5f4fa;
   --footer-background-color: #2f303a;
   --white-color: #ffffff;
 }
+
 body {
   color: var(--primary-text-color);
-  background: var(--white-color);
+  background-color: var(--white-color);
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71em;
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
 }
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid tomato; */
+}
+
 .link {
   text-decoration: none;
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .button {
+  display: inline-block;
   font-family: inherit;
+  text-align: center;
+  border: 1px solid transparent;
 }
 .button:hover {
   cursor: pointer;
@@ -65,16 +79,21 @@ body {
 /* Банер */
 .hero {
   background-color: var(--footer-background-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36em;
-  text-align: center;
+
   letter-spacing: 0.06em;
   color: var(--white-color);
   font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .hero-button {
   font-weight: 700;
@@ -82,28 +101,49 @@ body {
   line-height: 1.87em;
   color: var(--white-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* Особенности */
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .features-title {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14em;
   font-weight: 700;
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.features-text {
+  margin: 0;
 }
 /* Чем мы занимаемся */
+.doing {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
 .section-title {
   font-size: 36px;
   line-height: 1.17em;
   text-align: center;
   font-weight: 700;
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 /* Наша команда */
 .team {
   font-size: 16px;
   background-color: var(--background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-item {
   background-color: var(--white-color);
@@ -116,11 +156,14 @@ body {
   text-align: center;
   font-weight: 500;
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .team-position {
   line-height: 1.14em;
   text-align: center;
   color: var(--primary-text-color);
+  margin: 0;
 }
 footer {
   background-color: var(--footer-background-color);
@@ -154,6 +197,8 @@ footer {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: var (--background-color);
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 .portfolio-filter-item:focus,
 .portfolio-filter-item:hover {
