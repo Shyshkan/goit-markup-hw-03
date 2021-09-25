@@ -283,6 +283,8 @@ footer {
   margin-right: calc(-1 * var(--card-gap));
 }
 .work {
+  border: 1px solid #eeeeee;
+  overflow: hidden;
   flex-basis: calc(100% / 3 - var(--card-gap));
   margin-bottom: var(--card-gap);
   margin-right: var(--card-gap);
@@ -293,7 +295,6 @@ img {
   max-width: ;
 }
 .work-card {
-  border: 1px solid #eeeeee;
   padding: 20px 0 20px 24px;
 }
 .work-name {
