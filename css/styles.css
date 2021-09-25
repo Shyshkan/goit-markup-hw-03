@@ -113,6 +113,8 @@ header {
   text-align: center;
 }
 .hero-title {
+  max-width: 696px;
+  margin: 0 auto;
   margin-top: 0;
   margin-bottom: 30px;
   text-transform: uppercase;
@@ -150,7 +152,11 @@ header {
   width: 1px;
   height: 1px;
   margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
 }
+
 .feature-list {
   display: flex;
 }
@@ -298,7 +304,7 @@ footer {
 
 img {
   display: block;
-  max-width: ;
+  max-width: 100%;
 }
 .work-card {
   padding: 20px 0 20px 24px;
